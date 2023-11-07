@@ -1,0 +1,160 @@
+body{
+    background-color: var(--color-clear);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.menu-close,
+.sub-menu,
+.register-mobile,
+.menu-hamburguer{
+    display: none;
+}
+
+header .navegation{
+    width: 70%;
+}
+
+header .navegation .menu{
+    display: flex;
+    gap: 40px;
+    position: relative;
+    color: var(--color-medium);
+}
+
+header .navegation .menu .item{
+    padding: 10px;
+    font-size: 14px;
+    color: var(--color-medium);
+}
+
+header .navegation .menu .item:hover{
+    color: var(--color-dark);
+    cursor: pointer;
+    position: relative;
+}
+
+header .navegation .menu .item .item-arrow{
+    padding-left: 10px;
+    padding-top: 5px;
+    position: absolute;
+}
+
+header .navegation .menu .item:hover .item-arrow{
+    transform: rotate(180deg);
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+header .navegation .menu .item:hover .sub-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: absolute;
+    padding: 20px 30px;
+    background-color: #fff;
+    left: -95px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+header .navegation .menu .item .sub-menu.features li img{
+    padding-right: 10px;
+}
+
+header .navegation .menu .item .sub-menu.company{
+    margin-left: 110px;
+}
+
+header .register{
+    display: flex;
+    gap: 40px;
+}
+
+header .register button,
+.register-mobile button{
+    background: none;
+    color: var(--color-medium);
+    cursor: pointer;
+}
+
+header .register .btn-login:hover,
+.register-mobile .btn-login:hover{
+    color: var(--color-dark);
+}
+
+header .register .btn-register,
+.register-mobile .btn-register{
+    border: 1.5px solid var(--color-medium);
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+header .register .btn-register:hover,
+.register-mobile .btn-register:hover{
+    color: var(--color-dark);
+    border: 1.5px solid var(--color-dark);
+}
+
+.main{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 125px;
+}
+
+.main .information{
+    display: flex;
+    flex-direction: column;
+    margin-top: 105px;
+    gap: 40px;
+    max-width: 530px;
+    padding: 30px 0;
+}
+
+.main .information .title{
+    font-size: 76px;
+    font-weight: 700;
+}
+
+.main .information .paragraph{
+    font-size: 18px;
+    color: var(--color-medium);
+    line-height: 25px;
+    max-width: 440px;
+}
+
+.main .information .btn-learn-more{
+    cursor: pointer;
+    align-self: self-start;
+    background: none;
+    color: var(--color-clear);
+    font-weight: 700;
+    font-size: 18px;
+    background-color: var(--color-dark);
+    padding: 15px 28px 13px 31px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    transition: 0.2s;
+    border: 1px solid transparent;
+}
+
+.main .information .btn-learn-more:hover{
+    background: #fff;
+    border: 1.5px solid var(--color-dark);
+    color: var(--color-dark);
+}
+
+.main .information .images-bottom{
+    display: flex;
+    gap: 50px;
+}
+
+.main .image-hero img{
+    max-width: 80%;
+}

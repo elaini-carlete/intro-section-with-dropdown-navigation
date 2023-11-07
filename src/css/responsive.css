@@ -1,0 +1,112 @@
+@media(max-width: 1125px){
+    header .navegation .menu,
+    header .register-desktop{
+        display: none;
+    }
+
+    .menu-hamburguer{
+        display: block;
+        cursor: pointer;
+    }
+
+    .overlay.ativo{
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.75;
+        left: 0;
+        top: 0;
+        background: #151515;
+    }
+
+    header .navegation .menu.ativo{
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        right: 0;
+        top: 0;
+        min-height: 100vh;
+        width: 240px;
+        padding: 25px;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    header .navegation .menu.ativo .menu-close{
+        cursor: pointer;
+        display: block;
+        max-width: 24px;
+        align-self: flex-end;
+    }
+
+    header .menu.ativo .item:hover .sub-menu{
+        position: inherit;
+        padding: 0;
+        margin-top: 24px;
+    }
+
+    header .navegation .menu .item:hover .sub-menu{
+        margin-left: 100px;
+        width: 100%;
+    }
+
+    .register-mobile{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .main .information{
+        margin-top: -100px;
+    }
+
+    .main .information .title{
+        font-size: 80px;
+    }
+
+    .main .image-hero img{
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 575px){
+    .main .information .title{
+        font-size: 30px;
+        width: 343px;
+        text-align: center;
+    }
+
+    .main .information .paragraph{
+        font-size: 16px;
+        width: 343px;
+        text-align: center;
+    }
+
+    .main .information .btn-learn-more{
+      margin-left: 25%;
+    }
+
+    .main .information .images-bottom{
+        gap: 20px;
+        width: 343px;
+    }
+
+    .main .information .images-bottom img{
+        width: 100%;
+    }
+
+    .main .image-hero img{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
